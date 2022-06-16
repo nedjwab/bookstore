@@ -5,6 +5,7 @@ const Form = () => (
     <h2>ADD NEW BOOK</h2>
     <input placeholder="Book title" />
     <input placeholder="Author" />
+    <button type="submit">ADD BOOK</button>
   </div>
 
 );
