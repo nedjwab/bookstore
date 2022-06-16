@@ -6,11 +6,9 @@ const Book = (props) => {
   return (
     <div className="book-container">
       <h2>
-        This is the title
         { title }
       </h2>
       <h3>
-        This is the author
         { author }
       </h3>
     </div>
