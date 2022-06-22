@@ -12,6 +12,25 @@ export const deleteBook = () => ({
   type: DELETE_BOOK,
 });
 
+
+let books=[
+    bookOne = {
+        title:' Rich dad poor dad',
+        author:'Robert Kiyosaki'
+    },
+
+    bookTwo = {
+        title:'Atomic habits',
+        author:'James Clear'
+    },
+
+    bookThree = {
+        title:'The richest man in babylon',
+        author:'George Samuel Clason'
+    }
+
+]
+
 // Reducer
 const bookReducer = (state = [], action) => {
   switch (action.type) {
