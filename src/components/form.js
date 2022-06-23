@@ -1,51 +1,67 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import uuid from 'react-uuid';
+import { postBook } from '../redux/books/books';
 
-export default function Form() {
+const Addbook = () => {
+  const initialBook = {
+    item_id: '',
+    title: '',
+    author: '',
+    category: '',
+  };
+  const [bookState, setBookState] = useState(initialBook);
+
   const dispatch = useDispatch();
-  const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
 
-  const addBookEvent = (e) => {
-    e.preventDefault();
-    dispatch(
-      addBook({
-        id: Math.random() * 100,
-        title,
-        author,
-      }),
-    );
-    setTitle('');
-    setAuthor('');
+  const OnChange = (event) => {
+    const { name, value } = event.target;
+    setBookState({ ...bookState, [name]: value });
   };
 
-  const titleInput = (e) => {
-    setTitle(e.target.value);
+  const Submit = () => {
+    const book = { ...bookState, item_id: uuid() };
+    dispatch(postBook(book));
+    setBookState(initialBook);
   };
-
-  const authorInput = (e) => {
-    setAuthor(e.target.value);
-  };
-
   return (
-    <>
-      <h2>Add A Book</h2>
-      <form onSubmit={addBookEvent}>
+    <div>
+      <span>ADD NEW BOOK</span>
+      <form>
         <input
           type="text"
-          placeholder="Enter book title"
-          value={title}
-          onChange={titleInput}
+          name="title"
+          value={bookState.title}
+          placeholder="Book Title"
+          onChange={OnChange}
         />
         <input
           type="text"
-          placeholder="Enter book author"
-          value={author}
-          onChange={authorInput}
+          name="author"
+          value={bookState.author}
+          placeholder="Author"
+          onChange={OnChange}
         />
-        <button type="submit">Add Book </button>
+        <select
+          placeholder="categories"
+          name="category"
+          value={bookState.category}
+          onChange={OnChange}
+          required
+        >
+          <option value="">Category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Classics">Classics</option>
+          <option value="Cookbooks">Cookbooks</option>
+          <option value="Detective and Mystery">Detective and Mystery</option>
+          <option value="Romance">Romance</option>
+        </select>
+        <button type="button" onClick={Submit}>
+          Add book
+        </button>
       </form>
-    </>
+    </div>
   );
-}
+};
+
+export default Addbook;
