@@ -1,18 +1,29 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { deleteBook } from '../redux/books/books';
 
-const Book = (props) => {
-  const { title } = props;
-  const { author } = props;
+export default function Book() {
+  const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  const deleteBookEvent = (id) => {
+    dispatch(deleteBook(id));
+  };
+
+  if (!books) return <p>No Books Available</p>;
+
   return (
-    <div className="book-container">
-      <h2>
-        { title }
-      </h2>
-      <h3>
-        { author }
-      </h3>
-    </div>
-  );
-};
+    <>
+      {books.map((book) => (
+        <div key={book.id}>
+          {book.title}
 
-export default Book;
+          by
+
+          {book.author}
+          <button type="submit" onClick={() => deleteBookEvent(book.id)}>Remove</button>
+        </div>
+      ))}
+    </>
+  );
+}

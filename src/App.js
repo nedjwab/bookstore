@@ -1,6 +1,5 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
@@ -11,13 +10,11 @@ import Categories from './components/categories';
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path="/books" element={<Books />} />
-          <Route exact path="/categories" element={<Categories />} />
-        </Routes>
-      </Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/books" element={<Books />} />
+        <Route exact path="/categories" element={<Categories />} />
+      </Routes>
     </>
   );
 }

@@ -7,7 +7,6 @@ const Books = () => (
     <h1>Books list</h1>
     <div className="single-book">
       <Book />
-      <button type="submit">Remove</button>
     </div>
     <Form />
   </div>
