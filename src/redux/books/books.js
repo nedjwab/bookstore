@@ -1,26 +1,42 @@
-const ADD_BOOK = 'ADD_BOOK';
-const DELETE_BOOK = 'DELETE_BOOK';
+const ADD_BOOK = 'react-bookstore/books/ADD_BOOK';
+const DELETE_BOOK = 'react-bookstore/books/DELETE_BOOK';
 
-// Actions
+const books = [
+  {
+    id: 1,
+    title: ' Rich dad poor dad',
+    author: 'Robert Kiyosaki',
+  },
 
-export const addBook = (book) => ({
-  type: ADD_BOOK,
-  payload: book,
-});
+  {
+    id: 2,
+    title: 'Atomic habits',
+    author: 'James Clear',
+  },
 
-export const deleteBook = () => ({
-  type: DELETE_BOOK,
-});
+  {
+    id: 3,
+    title: 'The richest man in babylon',
+    author: 'George Samuel Clason',
+  },
 
-// Reducer
-const bookReducer = (state = [], action) => {
+];
+
+export default function booksReducer(state = books, action) {
   switch (action.type) {
-    case 'ADD_BOOK':
-      return [...state, action.payload];
-    case 'DELETE_BOOK':
-      return [...state.filter((book) => book !== action.payload)];
-    default: return state;
+    case ADD_BOOK:
+      return state.concat(action.payload);
+    case DELETE_BOOK:
+      return [...state.filter((book) => (book.id !== action.payload))];
+    default:
+      return state;
   }
-};
+}
 
-export default bookReducer;
+export function addBook(book) {
+  return { type: ADD_BOOK, payload: book };
+}
+
+export function deleteBook(id) {
+  return { type: DELETE_BOOK, payload: id };
+}
