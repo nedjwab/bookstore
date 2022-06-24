@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
 :root {
   --logocolor: #0290ff;
   --textcolor: #121212;
@@ -31,7 +32,7 @@ header {
   font-size: 1.1rem;
   font-weight: normal;
   font-stretch: normal;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
@@ -87,7 +88,7 @@ header {
 }
 
 .book-informations {
-  width:30%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -115,7 +116,7 @@ header {
   width: 25rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family:'RobotoSlab', sans-serif;
+  font-family: 'RobotoSlab', sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -131,10 +132,10 @@ hr {
 }
 
 .book-author {
- width: 6.688rem;
+  width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab,sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -159,7 +160,6 @@ hr {
 }
 
 .chapter-info {
-  margin-right: 50px;
   margin-top: 10px;
   margin-right: 50px;
 }
@@ -169,20 +169,19 @@ hr {
   width: 90%;
   height: 1.125rem;
   opacity: 0.5;
-  font-family: 'RobotoSlab',sans-serif;
+  font-family: 'RobotoSlab', sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #121212;
 }
 
 .chapter-number {
   color: var(--textcolor);
   font-size: 15px;
-  font-family: 'RobotoSlab',sans-serif;
+  font-family: 'RobotoSlab', sans-serif;
 }
 
 .progress-button {
@@ -207,8 +206,8 @@ hr {
 }
 
 .progress-container {
-  width:25%;
-  height:25%;
+  width: 25%;
+  height: 25%;
   margin-left: 14rem;
   display: flex;
   flex-direction: row;
@@ -327,7 +326,7 @@ input {
 
 .test {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin-left: 20px;
   margin-top: 13px;
   width: 50%;
@@ -338,7 +337,7 @@ input {
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.1rem 5.75rem 0 0.688rem;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
