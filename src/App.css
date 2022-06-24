@@ -1,8 +1,8 @@
 :root {
-  --logocolor:#0290ff;
-  --textcolor:#121212;
-  --secondcolor:#4386bf;
-  --progresscolor:#e8e8e8;
+  --logocolor: #0290ff;
+  --textcolor: #121212;
+  --secondcolor: #4386bf;
+  --progresscolor: #e8e8e8;
 }
 
 body {
@@ -12,18 +12,17 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  border-bottom:solid 1px #e8e8e8 ;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-bottom: solid 1px #e8e8e8;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
 .nav-items {
   margin: 29px 30px;
 }
 
-
 .nav-item {
   text-decoration: none;
-  color:var(--textcolor);
+  color: var(--textcolor);
   width: 3.688rem;
   height: 1rem;
   margin: 1rem 2.563rem 0.688rem 0;
@@ -34,26 +33,26 @@ header {
   line-height: normal;
   letter-spacing: 1.9px;
 }
- 
+
 #logo {
   width: 15rem;
   height: 2.313rem;
   margin: 1.5rem 2.938rem 0.125rem 8rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color:var(--logocolor);
+  color: var(--logocolor);
 }
 
 .logo-section {
   width: 2.813rem;
   height: 2.813rem;
   margin: 1.2rem 0 0 28.5rem;
-  padding: 0rem;
+  padding: 0;
   border: solid 1px #e8e8e8;
   border-radius: 30px;
 }
@@ -61,34 +60,34 @@ header {
 .user-icon {
   position: relative;
   top: 0.8rem;
-  left:0.85rem;
-  color:var(--logocolor);
+  left: 0.85rem;
+  color: var(--logocolor);
 }
 
 .single-book {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .book {
-  display: flex; 
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 13px;
   margin-top: 50px;
-  width:80%;
+  width: 80%;
   border: solid 1px #e8e8e8;
   background-color: white;
-  padding:10px 0 50px 0;
+  padding: 10px 0 50px 0;
 }
 
 .book-informations {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top:9px;
+  margin-top: 9px;
   margin-left: 13px;
 }
 
@@ -97,7 +96,7 @@ header {
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -111,7 +110,7 @@ header {
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -119,48 +118,47 @@ header {
   line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
-
 }
 
 .book-author {
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color:var(--secondcolor);
+  color: var(--secondcolor);
 }
 
 .buttons-container {
-  margin-left:3px;
+  margin-left: 3px;
   margin-top: 13px;
 }
 
 .buttons {
   background-color: white;
-  border:none;
-  color:var(--secondcolor);
+  border: none;
+  color: var(--secondcolor);
   border-right: solid 1px #e8e8e8;
   margin-right: 10px;
   cursor: pointer;
 }
 
 .chapter-info {
- margin-right: 50px;
- margin-top:10px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
 
 .current-chapter {
-  color:var(--textcolor);
+  color: var(--textcolor);
   width: 7.875rem;
   height: 1.125rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -170,25 +168,25 @@ header {
 }
 
 .chapter-number {
-  color:var(--textcolor);
+  color: var(--textcolor);
   font-size: 15px;
 }
 
 .progress-button {
-  color:white;
+  color: white;
   background-color: var(--logocolor);
-  border:none;
-  width:10rem;
-  padding:10px;
+  border: none;
+  width: 10rem;
+  padding: 10px;
   border-radius: 2px;
 }
 
 .Add-button {
-  color:white;
+  color: white;
   background-color: var(--logocolor);
-  border:none;
-  width:50%;
-  height:3.4rem;
+  border: none;
+  width: 50%;
+  height: 3.4rem;
   margin-top: 20px;
   border-radius: 2px;
   margin-left: 130px;
@@ -196,19 +194,14 @@ header {
 }
 
 .progress-container {
-  display:flex;
+  display: flex;
   flex-direction: row;
-}
-
-.progress-container {
   margin-top: 34px;
-  display:flex;
-  flex-direction:row;
 }
 
 .progress-bar {
-  width:20%;
-  height:20%;
+  width: 20%;
+  height: 20%;
   margin-right: 20px;
   margin-top: 13px;
 }
@@ -217,7 +210,7 @@ header {
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.1rem;
   font-weight: normal;
   font-stretch: normal;
@@ -227,7 +220,7 @@ header {
 }
 
 .Form {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 8.2rem;
@@ -235,7 +228,7 @@ header {
 
 form {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 input {
@@ -248,9 +241,9 @@ input {
   background-color: #fff;
 }
 
-.cat  {
+.cat {
   width: 19rem;
-  height:3.4rem;
+  height: 3.4rem;
   margin: 1.188rem 2.125rem 0;
   padding: 0.375rem 0.938rem 0.563rem 1rem;
   border-radius: 4px;
@@ -262,45 +255,45 @@ input {
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
-  color:grey;
+  color: grey;
 }
 
 .status-container {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin:200px 90px;
+  margin: 200px 90px;
 }
 
 .status-text {
   width: 10.875rem;
   height: 1.5rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
-  color:grey;
+  color: grey;
 }
 
 .status-button {
-  color:white;
+  color: white;
   background-color: var(--logocolor);
-  border:none;
-  width:10%;
-  height:3.4rem;
+  border: none;
+  width: 10%;
+  height: 3.4rem;
   border-radius: 2px;
   cursor: pointer;
 }
 
 .progress-status {
-  color:gray;
+  color: gray;
   opacity: 0.7;
 }
