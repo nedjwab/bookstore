@@ -6,7 +6,8 @@ The Bookstore is a website that allows the user to :
 -Add a book.
 -Remove a selected book.
 
-
+# Live Demo
+[here](https://github.com/nedjwab) the live demo of the book store app.
 
 ## Built With 🔨
 - Basic CSS 
@@ -19,7 +20,7 @@ The Bookstore is a website that allows the user to :
 
 ### Installation 
 - clone this repo  `git clone https://github.com/nedjwab/bookstore.git` on your terminal.
-- Type `cd microverse-Leaderboard` to access the project on the terminal.
+- Type `cd bookstore` to access the project on the terminal.
 
 #### Install dependencies
 ```
