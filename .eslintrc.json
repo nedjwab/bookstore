@@ -20,7 +20,7 @@
       "import/no-unresolved": "off",
       "no-shadow": "off",
       "react/prop-types": "off",
-      "linebreak-style": ["error", "windows"]
+      "linebreak-style": 0
     },
     "ignorePatterns": [
       "dist/",
