@@ -46,4 +46,20 @@ header {
   color:var(--logocolor);
 }
 
+.logo-section {
+  width: 2.813rem;
+  height: 2.813rem;
+  margin: 1.2rem 0 0 34.5rem;
+  padding: 0rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 30px;
+}
+
+.user-icon {
+  position: relative;
+  top: 0.8rem;
+  left:0.85rem;
+  color:var(--logocolor);
+}
+
  
