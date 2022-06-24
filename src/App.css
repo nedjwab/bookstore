@@ -151,8 +151,7 @@ header {
 }
 
 .chapter-info {
-  position: relative;
-  left:14rem;
+ margin-right: 17px;
 }
 
 .current-chapter {
@@ -183,27 +182,33 @@ header {
   border-radius: 2px;
 }
 
+.progress-container {
+  display:flex;
+  flex-direction: row;
+}
+
+.progress-container {
+  margin-top: 34px;
+  display:flex;
+  flex-direction:row;
+}
+
 .progress-bar {
-  position: relative;
-  margin: 4px;
-  float:left;
-  text-align: center;
+  width:20%;
+  height:20%;
+  margin-right: 20px;
+  margin-top: 13px;
 }
 
-.barOverflow{ /* Wraps the rotating .bar */
-  position: relative;
-  width: 180px; height: 90px; /* Half circle (overflow) */
-  margin-bottom: -14px; /* bring the numbers up */
-  overflow: hidden;
-}
-
-.bar{
-  position: absolute;
-  top: 0; left: 0;
-  width: 180px; height: 180px; /* full circle! */
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 10px solid #ccc;     /* half gray, */
-  border-bottom-color: #0bf;  /* half azure */
-  border-right-color: #0bf;
+.progress-info {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat;
+  font-size: 1.1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }

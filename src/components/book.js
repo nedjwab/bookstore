@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import { fetchBooks, deleteBook } from '../redux/books/books';
+import 'react-circular-progressbar/dist/styles.css';
 
 export default function Book() {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
-
   const deleteBookEvent = (id) => {
     dispatch(deleteBook(id));
   };
@@ -15,6 +16,7 @@ export default function Book() {
   }, []);
 
   if (!books) return <p>No Books Available</p>;
+  const value = Math.floor((Math.random() * 100));
   return (
     <>
       {books.map((book) => (
@@ -38,20 +40,24 @@ export default function Book() {
               <button className="buttons" type="submit">Edit</button>
             </div>
           </div>
-
-          <div className="progress-bar">
-            <div className="barOverflow">
-              <div className="bar" />
+          <section className="progress-container">
+            <div className="progress-bar">
+              <CircularProgressbar value={value} />
             </div>
-            <span>100</span>
-            %
-          </div>
+            <div className="progress-info">
+              <p className="progress-number">
+                {value}
+                %
+              </p>
+              <p className="progress-status">Completed</p>
+            </div>
+          </section>
           <div className="chapter-info">
             <p className="current-chapter">CURRENT CHAPTER</p>
             <p className="chapter-number">
               CHAPTER :
               {' '}
-              {Math.floor((Math.random() * 10) + 1)}
+              {value}
             </p>
             <button className="progress-button" type="submit">UPDATE PROGRESS</button>
           </div>
