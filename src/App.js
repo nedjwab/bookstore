@@ -1,5 +1,5 @@
 import './App.css';
-/* eslint linebreak-style: ["error", "windows"] */
+
 
 import {
   Routes,
