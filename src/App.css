@@ -86,6 +86,7 @@ header {
 }
 
 .book-informations {
+  width:30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,7 +111,7 @@ header {
 }
 
 .book-title {
-  width: 22.813rem;
+  width: 25rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
   font-family:'RobotoSlab', sans-serif;
@@ -202,23 +203,24 @@ hr {
 }
 
 .progress-container {
+  width:25%;
+  height:25%;
+  margin-left: 14rem;
   display: flex;
   flex-direction: row;
   margin-top: 34px;
-  border-right: solid 1px #e8e8e8;
 }
 
 .progress-bar {
-  width: 20%;
-  height: 20%;
-  margin-right: 20px;
+  position: relative;
+  width: 25%;
+  height: 25%;
   margin-top: 13px;
 }
 
 .progress-info {
   width: 4.25rem;
   height: 2.438rem;
-  margin: 0.063rem 5.75rem 0 0.688rem;
   font-family: Montserrat, sans-serif;
   font-size: 1.1rem;
   font-weight: normal;
@@ -226,7 +228,6 @@ hr {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  border-right: solid 1px #e8e8e8;
 }
 
 .Form {
