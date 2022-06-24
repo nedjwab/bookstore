@@ -45,8 +45,8 @@ export default function Book() {
             </p>
           </div>
           <div className="chapter-info">
-            <p>CURRENT CHAPTER</p>
-            <p>CHAPTER :19</p>
+            <p className="current-chapter">CURRENT CHAPTER</p>
+            <p className="chapter-number">CHAPTER :19</p>
             <button className="progress-button" type="submit">UPDATE PROGRESS</button>
           </div>
 
