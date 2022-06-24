@@ -7,7 +7,7 @@ The Bookstore is a website that allows the user to :
 -Remove a selected book.
 
 # Live Demo
-[here](https://github.com/nedjwab) the live demo of the book store app.
+
 
 ## Built With 🔨
 - Basic CSS 
