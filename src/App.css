@@ -37,7 +37,7 @@ header {
 #logo {
   width: 15rem;
   height: 2.313rem;
-  margin: 1.5rem 2.938rem 0.125rem 5rem;
+  margin: 1.5rem 2.938rem 0.125rem 8rem;
   font-family: Montserrat;
   font-size: 1.875rem;
   font-weight: bold;
@@ -51,7 +51,7 @@ header {
 .logo-section {
   width: 2.813rem;
   height: 2.813rem;
-  margin: 1.2rem 0 0 34.5rem;
+  margin: 1.2rem 0 0 28.5rem;
   padding: 0rem;
   border: solid 1px #e8e8e8;
   border-radius: 30px;
@@ -69,13 +69,13 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom:20px;
 }
 
 .book {
   display: flex; 
   flex-direction:row;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
   margin-top: 50px;
   width:80%;
   border: solid 1px #e8e8e8;
@@ -87,6 +87,8 @@ header {
   display: flex;
   flex-direction:column;
   justify-content: space-between;
+  margin-top:9px;
+  margin-left: 13px;
 }
 
 .book-category {
