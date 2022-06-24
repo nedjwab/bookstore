@@ -19,19 +19,38 @@ export default function Book() {
   return (
     <>
       {books.map((book) => (
-        <div key={book.id}>
-          <p>
+        <section className="book" key={book.id}>
+          <div div className="book-informations">
+            <p className="book-category">
+              {' '}
+              {book.category}
+            </p>
             {' '}
-            {book.category}
-          </p>
-          {' '}
-          {book.title}
+            <p className="book-title">
+              {book.title}
+            </p>
+            {' '}
+            <p className="book-author">
+              {book.author}
+            </p>
+            <div className="buttons-container">
+              <button className="buttons" type="submit">Comments</button>
+              <button className="buttons" type="submit" onClick={() => deleteBookEvent(book.id)}>Remove</button>
+              <button className="buttons" type="submit">Edit</button>
+            </div>
+          </div>
+          <div className="progressbar">
+            <p>
+              progress bar
+            </p>
+          </div>
+          <div className="chapter-info">
+            <p>CURRENT CHAPTER</p>
+            <p>CHAPTER :19</p>
+            <button className="progress-button" type="submit">UPDATE PROGRESS</button>
+          </div>
 
-          by
-
-          {book.author}
-          <button type="submit" onClick={() => deleteBookEvent(book.id)}>Remove</button>
-        </div>
+        </section>
       ))}
     </>
   );

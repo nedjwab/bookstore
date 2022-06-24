@@ -11,6 +11,8 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  border-bottom:solid 1px #e8e8e8 ;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .nav-items {
@@ -62,4 +64,72 @@ header {
   color:var(--logocolor);
 }
 
+.single-book {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.book {
+  display: flex; 
+  flex-direction:row;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  width:80%;
+  border: solid 1px #e8e8e8;
+  background-color: white;
+  padding:10px 0 50px 0;
+}
+
+.book-informations {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.book-category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.book-title {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+
+}
+
+.book-author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color:var(--secondcolor);
+}
  
