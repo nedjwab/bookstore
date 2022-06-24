@@ -7,6 +7,7 @@ const Books = () => (
     <div className="single-book">
       <Book />
     </div>
+    <hr />
     <Form />
   </div>
 

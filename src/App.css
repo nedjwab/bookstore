@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
 :root {
   --logocolor: #0290ff;
   --textcolor: #121212;
@@ -29,6 +30,7 @@ header {
   font-size: 1.1rem;
   font-weight: normal;
   font-stretch: normal;
+  font-family: Montserrat,sans-serif;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
@@ -89,6 +91,7 @@ header {
   justify-content: space-between;
   margin-top: 9px;
   margin-left: 13px;
+  padding: 15px;
 }
 
 .book-category {
@@ -107,10 +110,10 @@ header {
 }
 
 .book-title {
-  width: 12.313rem;
+  width: 22.813rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab, sans-serif;
+  font-family:'RobotoSlab', sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -120,18 +123,23 @@ header {
   color: #121212;
 }
 
+hr {
+  width: 80%;
+  border: solid 1px #e8e8e8;
+}
+
 .book-author {
-  width: 6.688rem;
+ width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab, sans-serif;
+  font-family: RobotoSlab,sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--secondcolor);
+  color: #4386bf;
 }
 
 .buttons-container {
@@ -197,6 +205,7 @@ header {
   display: flex;
   flex-direction: row;
   margin-top: 34px;
+  border-right: solid 1px #e8e8e8;
 }
 
 .progress-bar {
@@ -217,9 +226,11 @@ header {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  border-right: solid 1px #e8e8e8;
 }
 
 .Form {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -229,6 +240,7 @@ header {
 form {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 input {
@@ -252,7 +264,7 @@ input {
 }
 
 .form-title {
-  width: 10.875rem;
+  width: 14rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
   font-family: Montserrat, sans-serif;
