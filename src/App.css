@@ -134,4 +134,20 @@ header {
   letter-spacing: normal;
   color:var(--secondcolor);
 }
+
+.buttons-container {
+  margin-left:3px;
+  margin-top: 13px;
+}
+
+.buttons {
+  background-color: white;
+  border:none;
+  color:var(--secondcolor);
+  border-right: solid 1px #e8e8e8;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
  
