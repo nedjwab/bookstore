@@ -15,7 +15,6 @@ export default function Book() {
   }, []);
 
   if (!books) return <p>No Books Available</p>;
-
   return (
     <>
       {books.map((book) => (
@@ -39,14 +38,21 @@ export default function Book() {
               <button className="buttons" type="submit">Edit</button>
             </div>
           </div>
-          <div className="progressbar">
-            <p>
-              progress bar
-            </p>
+
+          <div className="progress-bar">
+            <div className="barOverflow">
+              <div className="bar" />
+            </div>
+            <span>100</span>
+            %
           </div>
           <div className="chapter-info">
             <p className="current-chapter">CURRENT CHAPTER</p>
-            <p className="chapter-number">CHAPTER :19</p>
+            <p className="chapter-number">
+              CHAPTER :
+              {' '}
+              {Math.floor((Math.random() * 10) + 1)}
+            </p>
             <button className="progress-button" type="submit">UPDATE PROGRESS</button>
           </div>
 

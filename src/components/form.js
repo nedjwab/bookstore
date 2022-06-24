@@ -53,7 +53,7 @@ const Addbook = () => {
           <option value="Fiction">Fiction</option>
           <option value="Classics">Classics</option>
           <option value="Cookbooks">Cookbooks</option>
-          <option value="Detective and Mystery">Detective and Mystery</option>
+          <option value="Detective and Mystery">Detective</option>
           <option value="Romance">Romance</option>
         </select>
         <button type="button" onClick={Submit}>

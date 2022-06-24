@@ -2,6 +2,7 @@
   --logocolor:#0290ff;
   --textcolor:#121212;
   --secondcolor:#4386bf;
+  --progresscolor:#e8e8e8;
 }
 
 body {
@@ -182,5 +183,27 @@ header {
   border-radius: 2px;
 }
 
+.progress-bar {
+  position: relative;
+  margin: 4px;
+  float:left;
+  text-align: center;
+}
 
- 
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  width: 180px; height: 90px; /* Half circle (overflow) */
+  margin-bottom: -14px; /* bring the numbers up */
+  overflow: hidden;
+}
+
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 180px; height: 180px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 10px solid #ccc;     /* half gray, */
+  border-bottom-color: #0bf;  /* half azure */
+  border-right-color: #0bf;
+}
