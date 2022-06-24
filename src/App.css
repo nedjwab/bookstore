@@ -271,3 +271,31 @@ input {
   letter-spacing: -0.18px;
   color:grey;
 }
+
+.status-container {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+  margin:200px 90px;
+}
+
+.status-text {
+  width: 10.875rem;
+  height: 1.5rem;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  color:grey;
+}
+
+.status-button {
+  color:white;
+  background-color: var(--logocolor);
+  border:none;
+  width:10%;
+  height:3.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+}

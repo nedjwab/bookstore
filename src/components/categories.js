@@ -9,9 +9,9 @@ const Categories = () => {
     dispatch(checkStatus());
   };
   return (
-    <section>
-      <p>{status}</p>
-      <button type="submit" onClick={checkinStatus}>Check Status</button>
+    <section className="status-container">
+      <p className="status-text">{status}</p>
+      <button type="submit" className="status-button" onClick={checkinStatus}>Check Status</button>
     </section>
   );
 };
