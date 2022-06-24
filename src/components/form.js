@@ -25,24 +25,25 @@ const Addbook = () => {
     setBookState(initialBook);
   };
   return (
-    <div>
-      <span>ADD NEW BOOK</span>
+    <section className="Form">
+      <span className="form-title">ADD NEW BOOK</span>
       <form>
         <input
           type="text"
           name="title"
           value={bookState.title}
-          placeholder="Book Title"
+          placeholder="Enter Book Title"
           onChange={OnChange}
         />
         <input
           type="text"
           name="author"
           value={bookState.author}
-          placeholder="Author"
+          placeholder="Enter Author"
           onChange={OnChange}
         />
         <select
+          className="cat"
           placeholder="categories"
           name="category"
           value={bookState.category}
@@ -56,11 +57,11 @@ const Addbook = () => {
           <option value="Detective and Mystery">Detective</option>
           <option value="Romance">Romance</option>
         </select>
-        <button type="button" onClick={Submit}>
+        <button className="Add-button" type="button" onClick={Submit}>
           Add book
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

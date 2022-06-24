@@ -16,7 +16,8 @@ export default function Book() {
   }, []);
 
   if (!books) return <p>No Books Available</p>;
-  const value = Math.floor((Math.random() * 100));
+  const value = 70;
+  const chapter = 30;
   return (
     <>
       {books.map((book) => (
@@ -57,7 +58,7 @@ export default function Book() {
             <p className="chapter-number">
               CHAPTER :
               {' '}
-              {value}
+              {chapter}
             </p>
             <button className="progress-button" type="submit">UPDATE PROGRESS</button>
           </div>
