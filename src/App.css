@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  background-color: #fafafa;
 }
 
 header {
@@ -307,6 +308,39 @@ input {
 }
 
 .progress-status {
-  color: gray;
-  opacity: 0.7;
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.test {
+  display: flex;
+  flex-direction:column;
+  margin-left: 20px;
+  margin-top: 13px;
+  width: 50%;
+  border-right: solid 1px #e8e8e8;
+}
+
+.progress-number {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.1rem 5.75rem 0 0.688rem;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }

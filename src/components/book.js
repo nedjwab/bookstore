@@ -45,12 +45,14 @@ export default function Book() {
             <div className="progress-bar">
               <CircularProgressbar value={value} />
             </div>
-            <div className="progress-info">
-              <p className="progress-number">
-                {value}
-                %
-              </p>
-              <p className="progress-status">Completed</p>
+            <div className="test">
+              <div className="progress-info">
+                <p className="progress-number">
+                  {value}
+                  %
+                </p>
+                <p className="progress-status">Completed</p>
+              </div>
             </div>
           </section>
           <div className="chapter-info">
